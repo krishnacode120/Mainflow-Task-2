@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Navigation Menu</title>
+    <style>
+        /* Reset default list styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main navigation styling */
+        nav {
+            background-color: #2c3e50;
+            padding: 1rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #34495e;
+            border-radius: 4px;
+        }
+
+        /* Dropdown menu styling */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            list-style: none;
+            padding: 0.5rem 0;
+        }
+
+        .dropdown-item .dropdown-link {
+            color: #2c3e50;
+            padding: 0.75rem 1rem;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.2s ease;
+        }
+
+        .dropdown-link:hover {
+            background-color: #f5f6fa;
+        }
+
+        /* Show dropdown on hover */
+        .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Optional transition for dropdown */
+        .dropdown-menu {
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Services ▼</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">Web Design</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">Development</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">SEO Services</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

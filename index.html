@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Soul Snap - Capture the Moments That Matter. Explore premium cameras in our online shop.">
+  <title>Soul Snap | Online Camera Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <img src="assets/logo.png" alt="Soul Snap Logo" class="logo">
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#" id="shopLink">Shop ▼</a>
+            <ul class="dropdown-menu">
+              <li><a href="#shopSection">All Cameras</a></li>
+              <li><a href="#">DSLR</a></li>
+              <li><a href="#">Mirrorless</a></li>
+              <li><a href="#">Point & Shoot</a></li>
+            </ul>
+          </li>
+          <li><a href="#aboutSection">About Us</a></li>
+          <li><a href="#contactSection">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="cart-icon">
+        <img src="assets/icons/cart.svg" alt="Shopping Cart">
+        <span id="cartCount">0</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="homeSection" class="section">
+    <div class="hero-content">
+      <h1>Capture the Moments That Matter</h1>
+      <p>Explore a wide range of premium cameras designed for your passion.</p>
+      <button class="cta-button" id="goToShop">Shop Now</button>
+    </div>
+    <div class="hero-image">
+      <img src="assets/hero-banner.png" alt="Camera Hero Banner">
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shopSection" class="section hidden">
+    <h2>Shop Our Featured Cameras</h2>
+    <div class="filter">
+      <label for="priceFilter">Filter by Price:</label>
+      <select id="priceFilter">
+        <option value="all">All</option>
+        <option value="2000">Below $2,000</option>
+        <option value="4000">Below $4,000</option>
+      </select>
+    </div>
+    <div class="product-gallery" id="productGallery">
+      <div class="product-card" data-price="3899">
+        <img src="assets/camera1.jpg" alt="Camera 1">
+        <h3>Canon EOS R5</h3>
+        <p>$3,899</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-price="2499">
+        <img src="assets/camera2.jpg" alt="Camera 2">
+        <h3>Sony Alpha A7 III</h3>
+        <p>$2,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card" data-price="1699">
+        <img src="assets/camera3.jpeg" alt="Camera 3">
+        <h3>Fujifilm X-T4</h3>
+        <p>$1,699</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <button class="cta-button" id="backToHome">Back to Home</button>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="aboutSection" class="section">
+    <h2>About Us</h2>
+    <p>
+      At Soul Snap, we believe in the art of storytelling through photography. 
+      Whether you're a professional photographer or a hobbyist, our premium 
+      cameras and accessories are designed to meet your creative needs.
+    </p>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contactSection" class="section">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Soul Snap. All Rights Reserved.</p>
+      <ul class="social-icons">
+        <li><a href="https://facebook.com" target="_blank"><img src="assets/icons/facebook.svg" alt="Facebook"></a></li>
+        <li><a href="https://instagram.com" target="_blank"><img src="assets/icons/instagram.svg" alt="Instagram"></a></li>
+        <li><a href="https://twitter.com" target="_blank"><img src="assets/icons/twitter.svg" alt="Twitter"></a></li>
+      </ul>
+      <form class="newsletter">
+        <input type="email" placeholder="Subscribe to our newsletter">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
